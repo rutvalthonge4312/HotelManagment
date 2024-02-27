@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react'
 function Products(props) {
     const [imageUrl, setImageUrl] = useState("");
     const [imageName, setImageName] = useState("");
-    const fetchImages = async (id) => {
+    const fetchImages = async () => {
         try {
-            let response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
+            let response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${props.i}`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -23,14 +23,15 @@ function Products(props) {
     }
     
     useEffect(() => {
-        fetchImages(props.i);
-      },[fetchImages]);
+        fetchImages();
+      },[]);
     
     
     return (
-        <div className="card col-md-3 w-30 my-3 mx-0 rounded ">
+        
+        <div data-aos={(props.i%2===0)? "fade-right":"fade-left"} className="shadow rounded container fade-right col-md-4 w-30 my-3 mx-3 rounded  itemCard" >
             <div className="imgDiv rounded">
-                <img src={imageUrl} alt="" className='cardImage rounded'  />
+                <img src={imageUrl} alt="" className='cardImage  my-1 '  />
             </div>
             <div className="infoDiv">
                 <h3>{imageName}</h3>

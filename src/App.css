@@ -18,6 +18,7 @@ body{
 }
 .headerPart{
   background-color: rgb(211, 211, 211);
+  margin-bottom: 15rem;
 }
 @keyframes imageAnimation {
   0% {
@@ -34,17 +35,20 @@ body{
   }
 }
 .cardImage{
-  height: 100%;
-  width: 100%;
-  aspect-ratio: 16/9;
-  
+  height: 50%;
+  width: 50%;
+  aspect-ratio: 1/1;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); 
+  border-radius: 50%;
   object-fit: contain;
   
 }
-.card{
-  background-color: rgb(211, 211, 211);
 
+.itemCard{
+ 
+  background-color: rgb(211, 211, 211);
 }
 .ourProducts{
-  background-color: #939393;
+ 
+  background-color: white;
 }
