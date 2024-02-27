@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import RouteLogger from './components/RouteLogger';
 import HomePage from './screeens/HomePage';
