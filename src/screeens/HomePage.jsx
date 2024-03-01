@@ -2,6 +2,7 @@ import React from 'react'
 import google_btn from "../assets/cafe1.webp";
 import OurProducts from './OurProducts';
 import { Link } from "react-router-dom";
+import SignUp from './SignUp';
 
 function HomePage() {
     return (
@@ -27,6 +28,7 @@ function HomePage() {
                 </div>
             </div>
             <OurProducts></OurProducts>
+            <SignUp></SignUp>
         </div>
 
     )
