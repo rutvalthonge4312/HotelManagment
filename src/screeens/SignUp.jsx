@@ -6,7 +6,7 @@ function SignUp() {
         <div className="container">
             <div className="header my-4">
                 <h3 className='text-center my-1'><span style={{color:"red"}}>Sign Up Here</span>, To access More!</h3>
-                <div  className='text-center container my-1 w-50 col-sm-12 px-5 '>
+                <div  className='text-center container-fluid my-1 w-50 col-sm-12 px-5 '>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad blanditiis beatae, harum adipisci asperiores, laboriosam reiciendis cumque </p>
                 </div>
             </div>
